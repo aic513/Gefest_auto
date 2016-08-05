@@ -166,7 +166,7 @@ body {
     padding-left: 0px;
     margin-top: 9px;
     width: 151px;
-    height: 27px;
+    height: 29px;
     text-align: center;
     font-size: 12px;
     color: #babcbe;
@@ -215,7 +215,8 @@ body {
 }
 
 .list__item {
-    transform: skewX(-31deg);
+    padding: 0 26px;
+    transform: skewX(-25deg);
     margin-top: 1px;
     letter-spacing: -0.5px;
     display: inline-block;
@@ -225,7 +226,8 @@ body {
     font-size: 17px;
     margin-right: 101px;
     margin-top: 19px;
-    height: 57px;
+    height: 56px;
+    font-weight: 600;
     vertical-align: top;
 }
 
@@ -239,7 +241,7 @@ body {
 
 .list__item:first-child {
     cursor: pointer;
-    transform: skewX(2deg);
+    transform: skewX(0deg);
     width: 101px;
     background: url("../img/orange.png") no-repeat;
     margin-right: 0;
@@ -257,44 +259,55 @@ body {
 }
 
 .list__item:nth-child(2) {
-    margin-left: 8px;
+    letter-spacing: -2.2px;
+    margin-left: -18px;
+}
+
+.list__item:hover {
+    background-color: #f7941e;
+}
+
+.list__item--active {
+    background-color: #f7941e;
 }
 
 .list__item:nth-child(2)::after {
     content: "";
     position: absolute;
-    top: 21px;
-    left: 70px;
+    top: 19px;
+    left: 96px;
     width: 10px;
     height: 17px;
     background: url("../img/sprites/slash.png") no-repeat 64% 4%;
-    transform: skewX(25deg);
+    transform: skewX(26deg);
 }
 
 .list__item:nth-child(3) {
-    margin-left: -54px;
+    margin-left: -105px;
+    padding-right: 23px;
 }
 
 .list__item:nth-child(3)::after {
     content: "";
     position: absolute;
-    top: 21px;
-    left: 88px;
+    top: 19px;
+    left: 117px;
     width: 10px;
     height: 17px;
     background: url("../img/sprites/slash.png") no-repeat 64% 4%;
-    transform: skewX(25deg);
+    transform: skewX(26deg);
 }
 
 .list__item:nth-child(4) {
-    margin-left: -51px;
+    padding-right: 20px;
+    margin-left: -104px;
 }
 
 .list__item:nth-child(4)::after {
     content: "";
     position: absolute;
-    top: 21px;
-    left: 109px;
+    top: 19px;
+    left: 141px;
     width: 10px;
     height: 17px;
     background: url("../img/sprites/slash.png") no-repeat 64% 4%;
@@ -302,40 +315,42 @@ body {
 }
 
 .list__item:nth-child(5) {
-    margin-left: -55px;
-    letter-spacing: -0.2px;
+    margin-left: -105px;
+    letter-spacing: -1.7px;
 }
 
 .list__item:nth-child(5)::after {
     content: "";
     position: absolute;
-    top: 21px;
-    left: 187px;
+    top: 19px;
+    left: 217px;
     width: 10px;
     height: 17px;
     background: url("../img/sprites/slash.png") no-repeat 64% 4%;
-    transform: skewX(24deg);
+    transform: skewX(25deg);
 }
 
 .list__item:nth-child(6) {
-    margin-left: -59px;
+    margin-left: -104px;
+    letter-spacing: -2.5px;
+    padding-right: 30px;
 }
 
 .list__item:nth-child(6):after {
     content: "";
     position: absolute;
-    top: 20px;
-    left: 79px;
+    top: 19px;
+    left: 109px;
     width: 10px;
     height: 17px;
     background: url("../img/sprites/slash.png") no-repeat 64% 4%;
-    transform: skewX(23deg);
+    transform: skewX(27deg);
 }
 
 .list__item:last-child {
-    margin-left: -50px;
+    margin-left: -103px;
     margin-right: 0;
-    letter-spacing: -1.5px;
+    letter-spacing: -2px;
 }
 
 .main-image {
@@ -353,7 +368,7 @@ body {
 }
 
 .description-cost {
-    margin-top: -2px;
+    margin-top: 2px;
     width: 255px;
     min-height: 820px;
     float: left;
@@ -501,7 +516,7 @@ body {
 .description-about__name {
     padding-top: 1px;
     letter-spacing: 0.4px;
-    top: 17px;
+    top: 22px;
     position: absolute;
     width: 291px;
     height: 47px;

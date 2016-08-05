@@ -1,0 +1,40 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+.slick-prev:before {
+    content: url('../img/prev.png');
+}
+
+.slick-next:before {
+    content: url('../img/next.png');
+}
+
+.slick-prev {
+    left: -56px !important;
+    top: 38px !important;
+}
+
+.slick-next {
+    right: -47px !important;
+    top: 37px !important;
+}
